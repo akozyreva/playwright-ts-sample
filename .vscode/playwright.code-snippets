@@ -1,0 +1,14 @@
+{
+  "Playwright import": {
+    "scope": "typescript",
+    "prefix": "pwimport",
+    "body": ["import { test, expect } from '@playwright/test';"],
+    "description": "Импорт test и expect из @playwright/test",
+  },
+  "Playwright test": {
+    "scope": "typescript",
+    "prefix": "pwtest",
+    "body": ["test('${1:название теста}', async ({ page }) => {", "\t$0", "});"],
+    "description": "Тело Playwright-теста",
+  },
+}
