@@ -14,6 +14,12 @@ Run specific test file:
 npx playwright test tests/my-test.spec.ts
 ```
 
+Run test file with browser:
+
+```bash
+npx playwright test tests/my-test.spec.ts --headed
+```
+
 Runs the end-to-end tests.
 
 ```bash
