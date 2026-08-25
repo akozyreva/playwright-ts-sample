@@ -36,6 +36,7 @@ export default defineConfig({
 
     /* Record video and keep it only for failed tests. */
     video: 'retain-on-failure',
+    testIdAttribute: 'id',
   },
 
   /* Configure projects for major browsers */

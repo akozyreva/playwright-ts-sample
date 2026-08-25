@@ -20,6 +20,12 @@ Run test file with browser:
 npx playwright test tests/my-test.spec.ts --headed
 ```
 
+Run test by test name:
+
+```bash
+npx playwright test -g "Invalid title"
+```
+
 Runs the end-to-end tests.
 
 ```bash
