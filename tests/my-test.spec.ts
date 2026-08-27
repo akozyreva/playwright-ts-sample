@@ -9,7 +9,7 @@ test('Verify page title', async ({ page }) => {
 
   // it resolves the promise, but doesn't wait
   // promise is like task
-  page.title().then((title: string) => {
+  void page.title().then((title: string) => {
     console.log(`1 title: ${title}`)
   })
   // it's the correct one, because there's guarantee, that it will be done step by step

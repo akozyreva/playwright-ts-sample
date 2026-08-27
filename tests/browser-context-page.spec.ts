@@ -11,8 +11,8 @@ test('Browser, context, page', async () => {
   // create page
   const page1: Page = await context1.newPage()
   const page2: Page = await context2.newPage()
-  page1.goto('https://www.saucedemo.com/')
-  page2.goto('https://www.saucedemo.com/')
+  await page1.goto('https://www.saucedemo.com/')
+  await page2.goto('https://www.saucedemo.com/')
   await page1.waitForTimeout(5000)
   await page2.waitForTimeout(5000)
   await context1.close()
