@@ -1,12 +1,24 @@
 {
   "compilerOptions": {
+    // JS version to compile down to
     "target": "ES2021",
+    // module system: nodenext matches Node's own resolution rules for the "type" set in package.json
     "module": "nodenext",
+    // keep resolution algorithm in sync with "module"
     "moduleResolution": "nodenext",
+    // enables all strict type-checking options (noImplicitAny, strictNullChecks, etc.)
     "strict": true,
+    // allows default imports from CommonJS modules (import x from 'commonjs-pkg')
     "esModuleInterop": true,
+    // don't type-check .d.ts files in node_modules — speeds up compilation
     "skipLibCheck": true,
-    "types": ["node"]
+    // only load @types/node, not every @types/* package found in node_modules
+    "types": ["node"],
+    // import aliases so paths don't need relative "../../" chains
+    "paths": {
+      "@/test-data/*": ["./test-data/*"]
+    }
   },
+  // which files TypeScript should actually type-check
   "include": ["tests/**/*.ts", "playwright.config.ts"]
 }

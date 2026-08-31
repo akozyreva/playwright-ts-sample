@@ -105,3 +105,8 @@ Test names - use `my-test.spec.ts` syntax.
 ## Snippets
 
 There's no extension for snippets, so there are custom ones (see file: `.vscode/playwright.code-snippets`)
+
+## Assertions
+
+by default is 5 seconds for await actions. playwright tries to find el every 100 ms
+there are: soft assertions, partial assertions, not assertions.

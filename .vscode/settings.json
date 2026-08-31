@@ -1,8 +1,14 @@
 {
+  // auto-run ESLint's fixable rules on every save
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
+  // run ESLint on both .ts and .js files
   "eslint.validate": ["typescript", "javascript"],
+  // auto-fill parentheses/args when completing a function call
   "js/ts.suggest.completeFunctionCalls": true,
-   "js/ts.suggest.autoImports": true
+  // offer to add the import statement when completing a symbol that isn't imported yet
+  "js/ts.suggest.autoImports": true,
+  // use the TypeScript version installed in node_modules instead of VS Code's bundled one
+  "js/ts.tsdk.path": "node_modules/typescript/lib"
 }
